@@ -1,8 +1,8 @@
 {
-  "body": "",
+  "body": "{\n    \"metadata\": true,\n    \"reports\": false\n}",
   "resource": "/{proxy+}",
   "path": "/get_all",
-  "httpMethod": "GET",
+  "httpMethod": "POST",
   "queryStringParameters": {
     "foo": "bar"
   },
