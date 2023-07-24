@@ -8,5 +8,8 @@ def handler(event, context):
     metadata_all = DynamoClient().get_all_metadata()
     return {
         'statusCode': 200,
+        'headers': {
+            'Content-Type': 'application/json'
+        },
         'body': json.dumps(metadata_all)
     }
